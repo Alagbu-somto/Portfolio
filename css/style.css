@@ -1,0 +1,141 @@
+
+/* General */
+h1 h3{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Introduction */
+
+.image-size {
+  width: 200px;
+  height: 200px;
+}
+.bg-intro{
+  background-image: linear-gradient( #9795f0 0%, #fbc8d4 100%);
+}
+.font-intro{
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Skills */
+
+.card-img{
+  width: 50px;
+  height: 50px;
+}
+.bg-skills {
+  background-image: linear-gradient(to top,#BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+ background-blend-mode: normal, lighten, soft-light;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.h-skills{
+  height: 500px;
+  padding-top: 10px;
+}
+position-skills{
+  position: absolute;
+  top: 500px;
+}
+.bg-work{
+  background-image: linear-gradient( #c471f5 0%, #e5b2ca 100%);
+}
+
+/* Recent ProJects */
+
+.bg-project{
+  
+  background-image: linear-gradient(#d299c2 0%, #fef9d7 100%);
+}
+
+.img-project1{
+  background: url(images/coinview-app-S8XDzdF4Tf0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  border-radius: 50px;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+div.col-md-3:hover {
+  background: black;
+}
+
+div.middle:hover {
+  opacity: 1;
+}
+.img-project2{
+  background: url(images/1646737096111.jpg);
+  width: 400px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+}
+.img-project3{
+  background: url(images/1646854798356.jpg);
+  width: 400px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+}
+.img-project4{
+  background: url(images/1646737096098.jpg);
+  width: 400px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+}
+.img-project5{
+  background: url(images/1646737096107.jpg);
+  width: 400px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+}
+.img-project6{
+  background: url(images/1646854798363.jpg);
+  width: 400px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+/* Get In Touch */
+
+.bg-contact{
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
+.w-contact{
+  width: 28rem;
+}
+.m-contact{
+  margin-right: 24rem;
+}
+@media screen and (max-width: 480px) {
+  .w-contact{
+    width: 15rem;
+  }
+  .m-contact{
+    margin-right: 11rem;
+  }
+}
+
+/* Footer */
+
+.bg-footer{
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
