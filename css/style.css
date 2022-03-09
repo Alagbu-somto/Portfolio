@@ -66,6 +66,12 @@ position-skills{
   height: 100%;
 }
 
+.btn{
+border-radius: 10px;
+border: #9795f0;
+background-color: #9795f0;
+}
+
 div.col-md-3:hover {
   background: black;
 }
