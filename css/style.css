@@ -7,8 +7,8 @@ h1 h3{
 /* Introduction */
 
 .image-size {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 .bg-intro{
   background-image: linear-gradient( #9795f0 0%, #fbc8d4 100%);
@@ -17,6 +17,19 @@ h1 h3{
   font-weight: bold;
   font-size: large;
 }
+.animate-right{
+  width: 50%;
+  position: relative;
+  text-align: center;
+  animation-name: Right;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes Right {
+   from {opacity: 0; right: -50%;} to {opacity: 1; right: -25%;}
+}
+
 
 /* Skills */
 
@@ -45,7 +58,6 @@ position-skills{
 /* Recent ProJects */
 
 .bg-project{
-  
   background-image: linear-gradient(#d299c2 0%, #fef9d7 100%);
 }
 
@@ -72,13 +84,6 @@ border: #9795f0;
 background-color: #9795f0;
 }
 
-div.col-md-3:hover {
-  background: black;
-}
-
-div.middle:hover {
-  opacity: 1;
-}
 .img-project2{
   background: url(images/1646737096111.jpg);
   width: 400px;
@@ -119,6 +124,18 @@ div.middle:hover {
   background-size: cover;
   border-radius: 50px;
 }
+div.col-md-3{
+  -webkit-transition: width 2s, height 2s, -webkit-transform 0.5s; /* Safari */
+  transition: width 2s, height 2s, transform 0.5s;
+}
+div.col-md-3:hover {
+  background: black;
+  transform: rotate(360deg);
+}
+
+div.middle:hover {
+  opacity: 1;
+}
 
 /* Get In Touch */
 
@@ -144,4 +161,44 @@ div.middle:hover {
 
 .bg-footer{
   background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+
+/*animation element sliding left*/
+
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 700ms linear;
+  -webkit-transition: all 700ms linear;
+  -o-transition: all 700ms linear;
+  transition: all 700ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+.animate-up.view{
+  position: relative;
+  text-align: center;
+  animation-name: animate;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes animate {
+  from{opacity: 0; bottom: 0;} to {opacity: 1; bottom: 10px;}
 }
